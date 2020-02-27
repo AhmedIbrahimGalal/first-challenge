@@ -1,0 +1,314 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+    font-family: 'Karla';
+    font-weight: 400;
+    max-width: 1440px;
+    
+}
+/*Start NavBar*/
+.nav{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.nav .logo{
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.nav .navbar{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.nav .navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+.nav .navbar ul .navLink{
+    text-decoration: none;
+    color: hsl(216, 30%, 68%);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.nav .navbar ul .navLink:hover{
+    color: hsl(256, 26%, 20%);
+}
+.active{
+    color: hsl(256, 26%, 20%);
+    border: 2px solid hsl(270, 9%, 17%);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.active:hover{
+    background: hsl(270, 9%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+
+/*End NavBar*/
+
+/*Start content*/
+
+/*Start content1*/
+.container{
+    position: relative;
+    height: 1500px;
+}
+.container .content1{
+    width: 100%;
+    height: 350px;
+    padding-top: 80px;
+    padding-bottom: 115px;
+    color: hsl(0, 0%, 98%);
+    background:  hsl(256, 26%, 20%) ;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .content1 hr,
+.container .content1 h1 ,
+.container .content1 p,
+.footer .footer-up .logo,
+.footer  hr,
+.container .content1 button{
+    margin-left: 150px;
+}
+
+.container .content1 h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 45px;
+}
+
+.container .content1 p{
+    font-weight: normal;
+    line-height: 22px;
+    color:hsl(0, 0%, 98%) ;
+}
+
+.container .content1 button{
+    color: hsl(0, 0%, 98%);
+    background: transparent;
+    margin-top: 20px;
+    width:130px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid hsl(0, 0%, 98%);
+    font-weight: 700;
+}
+
+.container .content1 button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(270, 9%, 17%) ;
+}
+/*End content1*/
+/*start content2*/
+
+.container .content2{
+    width: 100%;
+    height: 600px;
+    padding-top: 200px;
+}
+
+.container .content2 hr,
+.container .content2 h2,
+.container .content2 .our-features {
+    margin-left: 150px;
+}
+
+.container .content2 h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    color:hsl(270, 9%, 17%) ;
+}
+
+.container .content2 .our-features{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container .content2 .our-features .feature{
+    padding: 20px;
+}
+
+.container .content2 .our-features .feature svg{
+    margin-bottom: 15px;
+}
+.container .content2 .our-features .feature h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color:hsl(270, 9%, 17%) ;
+}
+
+.container .content2 .our-features .feature p{
+    line-height: 25px;
+    color: hsl(216, 30%, 68%);
+}
+
+.container .content2 .our-work{
+    position: relative;
+    width: 70%;
+    height: 150px;
+    padding-top: 50px;
+    background:  hsl(256, 26%, 20%) ;
+    margin-left: 150px;
+    overflow: hidden;
+}
+.container .content2 .our-work svg{
+    position:absolute;
+    right:0px;
+    top:-35px;
+    z-index: 1;
+}
+
+.container .content2 .our-work h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    color: hsl(0, 0%, 98%);
+    float: left;
+}
+.container .content2 .our-work button {
+    color: hsl(0, 0%, 98%);
+    background: transparent;
+    margin-top: 20px;
+    width:130px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid hsl(0, 0%, 98%);
+    font-weight: 700;
+    right: 100px;
+    position: absolute;
+    z-index: 2;
+}
+
+.container .content2 .our-work button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color:hsl(270, 9%, 17%) ;
+}
+
+/*End content2*/
+/*End content*/
+
+/*Start footer*/
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding-top: 80px;
+    background: hsl(0, 0%, 98%);
+}
+.footer .footer-pattren{
+    position: absolute;
+    top: 0px;
+}
+
+
+.footer .footer-up{
+    position: absolute;
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+.footer .footer-up .logo{
+    width: 30%;
+}
+
+.footer .footer-up .socialMedia{
+    position: absolute;
+    width: 32%;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.footer .footer-up .socialMedia li svg{
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .footer-up .socialMedia li svg:hover path{
+    fill: hsl(256, 26%, 20%);
+}
+
+.footer .footer-down{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.footer .footer-down .fastlink{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.footer .footer-down .fastlink h4{
+    color: hsl(216, 30%, 68%);
+    margin-bottom: 10px;
+}
+
+.footer .footer-down .fastlink a{
+    text-decoration: none;
+    color:  hsl(270, 9%, 17%);
+    margin-bottom: 5px;
+}
+.footer .footer-down .fastlink a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*End footer*/
